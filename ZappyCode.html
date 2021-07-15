@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>
+        ZappyCode
+    </title>
+
+    <link rel="stylesheet" href="/static/sitewide/fontawesome-free/css/all.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/sitewide/sitewide4.css" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/sitewide/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/sitewide/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/sitewide/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/sitewide/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/static/sitewide/favicon/safari-pinned-tab.svg" color="#7469e9">
+    <meta name="apple-mobile-web-app-title" content="ZappyCode">
+    <meta name="application-name" content="ZappyCode">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <script async defer data-domain="zappycode.com" src="https://plausible.io/js/plausible.js"></script>
+    
+
+
+    
+    <link rel="stylesheet" href="/static/posts/css/posts_detail.css">
+    <link rel="stylesheet" href="/static/posts/css/rainbow.css">
+    
+        
+
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ZappyCode.com">
+<meta name="twitter:site" content="ZappyCode.com">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:url" content="https://ZappyCode.com/posts/1/django-cheat-sheet">
+<meta content="https://ZappyCode.com/posts/1/django-cheat-sheet" property="og:url">
+
+
+
+
+    <meta property="og:title" content="Django Cheat Sheet">
+    <meta name="twitter:title" content="Django Cheat Sheet">
+
+
+
+
+    <meta property="og:description" content="Here are some common commands you&#x27;ll use while working with Django. If you can think of anything I should add, let me know!
+Creating a New Project
+
+django-admin startproject projectname
+    
+Add…">
+    <meta name="twitter:description" content="Here are some common commands you&#x27;ll use while working with Django. If you can think of anything I should add, let me know!
+Creating a New Project
+
+django-admin startproject projectname
+    
+Add…">
+
+
+
+
+    <meta property="og:image" content="https://ZappyCode.com/static/sitewide/socialZappyCode.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:image" content="https://ZappyCode.com/static/sitewide/socialZappyCode.png">
+
+
+
+
+
+
+
+
+
+    
+
+
+    <meta name="apple-itunes-app" content="app-id=1523733753">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H229BG6TG7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-H229BG6TG7');
+    </script>
+</head>
+
+<body class="h-100 bg-primary">
+    <div class="container-fluid">
+        <nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-primary" id="navbar-main">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="/static/sitewide/ZappyCodeLogo2.svg" width="40" height="40" class="d-inline-block align-middle" alt="ZappyCode Logo">
+                    <span id="logo_text">ZappyCode</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/courses">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/tutorials">Tutorials</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Open
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://github.com/zappycode/zappycode-django" rel="noopener" target="_blank">⌨️ Code</a>
+                                <a class="dropdown-item" href="/money">💰 Money</a>
+                                <a class="dropdown-item" href="https://plausible.io/zappycode.com" rel="noopener" target="_blank">📈 Analytics</a>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pricing">Pricing</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://chitchat.zappycode.com" rel="noopener" target="_blank">Chit Chat</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/auth/signup">Sign Up</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+
+        
+    <article class="row justify-content-around align-items-center">
+        <div class="col-xl-8 col-11 pt-4 pb-5 bg-light">
+            <header>
+                <h1 class="big-title mb-3 text-center">Django Cheat Sheet</h1>
+
+                
+                <div class="wrapper d-flex justify-content-center mb-5">
+                    <span class="mr-3"><i class="far fa-clock mr-1"></i> 1 min read</span>
+                    <span><i class="far fa-calendar mr-1"></i> Dec 3, 2020</span>
+                </div>
+            </header>
+
+            <main class="main-content px-2 px-md-5">
+                <p>Here are some common commands you'll use while working with Django. If you can think of anything I should add, <a href="mailto:nick@zappycode.com">let me know!</a></p>
+<h2>Creating a New Project</h2>
+<pre class="rounded"><code>
+django-admin startproject projectname
+    </code></pre>
+<h2>Add an App to a Project</h2>
+<pre class="rounded"><code>
+python3 manage.py startapp appname
+    </code></pre>
+<h2>Starting the server</h2>
+<pre class="rounded"><code>
+python3 manage.py runserver
+    </code></pre>
+<h2>Creating Migrations</h2>
+<pre class="rounded"><code>
+python3 manage.py makemigrations
+    </code></pre>
+<h2>Migrate the Database</h2>
+<pre class="rounded"><code>
+python3 manage.py migrate
+    </code></pre>
+<h2>Creating a Super User for the Admin Panel</h2>
+<pre class="rounded"><code>
+python3 manage.py createsuperuser
+    </code></pre>
+<h2>Change Any User's Password</h2>
+<pre class="rounded"><code>
+python3 manage.py changepassword
+    </code></pre>
+<h2>Collecting Static Files Into One Folder</h2>
+<pre class="rounded"><code>
+python3 manage.py collectstatic
+    </code></pre>
+
+                
+                <div class="social-share mt-3 d-flex">
+                    <div class="facebook-this">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//zappycode.com/posts/1/django-cheat-sheet" target="_blank" class="btn btn-primary mr-3">Share to Facebook!</a>
+</div>
+                    <div class="tweet-this">
+    <a href="https://twitter.com/intent/tweet?text=New%20Tutorial%3A%20.%20Check%20it%20out%21%20https%3A//zappycode.com/posts/1/django-cheat-sheet" class="meta-act-link meta-tweet btn btn-primary" target="_blank">Post to Twitter</a>
+</div>
+                </div>
+            </main>
+        </div>
+    </article>
+
+
+
+        
+        
+        
+
+<div class="row justify-content-around align-items-center bg-primary">
+    <div class="col-12 pt-3 pb-3">
+        <div class="text-center text-white bold lead link-white">
+            ZappyCode was <span class="text-nowrap">updated 💻 <a href="https://github.com/zappycode/zappycode-django/commit/1e7388d5280f72ecf2d15b7f79c1d3a877317570">15 days ago</a>,</span> <span class="text-nowrap">has
+            🧑‍💻 <a href="/pricing">620 members</a></span> and
+            <span class="text-nowrap">made 🤑 <a href="/money">$317</a> last month</span>
+        </div>
+    </div>
+</div>
+
+
+
+        
+
+        <script src="/static/sitewide/jquery.min.js"></script>
+        <script src="/static/sitewide/bootstrap.bundle.min.js"></script>
+
+        <!-- Hide Messages -->
+        
+
+        
+    <script src="/static/posts/js/highlight.pack.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('pre').forEach((block) => {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+
+    </div>
+
+    <script>
+        window.intercomSettings = {
+            app_id: "h8tsn00g"
+        };
+    </script>
+    <script>
+        // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/h8tsn00g'
+        (function() {
+            var w = window;
+            var ic = w.Intercom;
+            if (typeof ic === "function") {
+                ic('reattach_activator');
+                ic('update', w.intercomSettings);
+            } else {
+                var d = document;
+                var i = function() {
+                    i.c(arguments);
+                };
+                i.q = [];
+                i.c = function(args) {
+                    i.q.push(args);
+                };
+                w.Intercom = i;
+                var l = function() {
+                    var s = d.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'https://widget.intercom.io/widget/h8tsn00g';
+                    var x = d.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                };
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        })();
+    </script>
+
+</body>
+
+</html>

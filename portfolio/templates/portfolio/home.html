@@ -7,5 +7,10 @@
 {% endfor %} -->
 
 {% for project in projects %}
-{{ project }} </br>
+<h2>{{ project.title }}</h2>
+<p>{{ project.description}}</p>
+<p><img src="{{ project.image.url }}" width="300"/></p>
+<p>{% if project.url %}
+    <a href="{{ project.url }}">Link</a>
+{% endif %}</p>
 {% endfor %}
